@@ -1,0 +1,20 @@
+services:
+  netbox:
+    networks:
+    - cont_network
+
+  postgres:
+    networks:
+    - cont_network
+
+  redis:
+    networks:
+    - cont_network
+
+  redis-cache:
+    networks:
+    - cont_network
+
+networks:
+  cont_network:
+    external: true
